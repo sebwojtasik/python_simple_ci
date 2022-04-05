@@ -5,7 +5,7 @@ deps:
 		pip install -r test_requirements.txt
 
 test:
-	PYTHONPATH=. py.test  --verbose -s
+	PYTHONPATH=. py.test --verbose -s --cov=hello_world --cov-report=xml
 run:
 	PYTHONPATH=. FLASK_APP=hello_world flask run
 lint:
